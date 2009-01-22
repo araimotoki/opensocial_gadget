@@ -3,9 +3,9 @@
 Ruby on Rails plugin for OpenSocial Gadget based on opensocial-ruby-client
 (http://code.google.com/p/opensocial-ruby-client)
 
-== •K—v‚Èƒ‰ƒCƒuƒ‰ƒŠ‚Ì“±“ü
+== å¿…è¦ãªãƒ©ã‚¤ãƒ–ãƒ©ãƒªã®å°å…¥
 
-ˆÈ‰º‚Ìgemƒ‰ƒCƒuƒ‰ƒŠ‚ª•K—v‚Å‚·
+ä»¥ä¸‹ã®gemãƒ©ã‚¤ãƒ–ãƒ©ãƒªãŒå¿…è¦ã§ã™
 * oauth
 * json
 * mocha (optional, for running tests) 
@@ -13,31 +13,31 @@ Ruby on Rails plugin for OpenSocial Gadget based on opensocial-ruby-client
 
  gem install oauth json mocha rails
 
-ÅVƒo[ƒWƒ‡ƒ“‚Ìopensocial-ruby-client‚ğˆÈ‰º‚ÌƒTƒCƒg‚©‚çæ“¾‚µ‚Ä“±“ü‚µ‚Ü‚·B
+æœ€æ–°ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã®opensocial-ruby-clientã‚’ä»¥ä¸‹ã®ã‚µã‚¤ãƒˆã‹ã‚‰å–å¾—ã—ã¦å°å…¥ã—ã¾ã™ã€‚
 * http://code.google.com/p/opensocial-ruby-client/downloads/list
 
  gem install opensocial-x.x.x.gem
 
-== ƒCƒ“ƒXƒg[ƒ‹
+== ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«
 
  script/plugin install git://github.com/araimotoki/opensocial_gadget.git
 
-== ‚Â‚©‚¢‚©‚½
+== ã¤ã‹ã„ã‹ãŸ
 
-ƒKƒWƒFƒbƒg‚Ìcontroller‚ğ¶¬‚µ‚Ü‚·
+ã‚¬ã‚¸ã‚§ãƒƒãƒˆã®controllerã‚’ç”Ÿæˆã—ã¾ã™
   script/generate opensocial_gadget <CONTROLLERNAME(Gadget)>
 
-‚±‚Ìê‡AƒKƒWƒFƒbƒgXML‚ÌURL‚ÍˆÈ‰º‚Æ‚È‚è‚Ü‚·B
+ã“ã®å ´åˆã€ã‚¬ã‚¸ã‚§ãƒƒãƒˆXMLã®URLã¯ä»¥ä¸‹ã¨ãªã‚Šã¾ã™ã€‚
  http://your.domain/<CONTROLLERNAME(gadget)>.xml
 
-== İ’è
+== è¨­å®š
 
 * config/gadget.yml
 
-keys‚Ì€–Ú‚ÉAOpenSocialƒT[ƒrƒX‚©‚çæ“¾‚µ‚½OAuth‚ÌuConsumer Keyv‚ÆuConsumer Secret Keyv‚ğİ’è‚µ‚Ü‚·B
-container‚Ì€–Ú‚É‚ÍA"ORKUT","IGOOGLE","MYSPACE"‚Ì‚¢‚¸‚ê‚©‚ğw’è‚µ‚Ü‚·B
+keysã®é …ç›®ã«ã€OpenSocialã‚µãƒ¼ãƒ“ã‚¹ã‹ã‚‰å–å¾—ã—ãŸOAuthã®ã€ŒConsumer Keyã€ã¨ã€ŒConsumer Secret Keyã€ã‚’è¨­å®šã—ã¾ã™ã€‚
+containerã®é …ç›®ã«ã¯ã€"ORKUT","IGOOGLE","MYSPACE"ã®ã„ãšã‚Œã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-Ÿ‚ÌƒL[‚ª”­s‚³‚ê‚½ê‡AˆÈ‰º‚Ì‚æ‚¤‚Éİ’è‚µ‚Ü‚·B
+æ¬¡ã®ã‚­ãƒ¼ãŒç™ºè¡Œã•ã‚ŒãŸå ´åˆã€ä»¥ä¸‹ã®ã‚ˆã†ã«è¨­å®šã—ã¾ã™ã€‚
 orkut.com
 OAuth Consumer Key: 000000000000
 OAuth Consumer Secret: xxxxxxxxxxxxxxxxxxxxxxxx
@@ -48,11 +48,11 @@ keys:
     secret: xxxxxxxxxxxxxxxxxxxxxxxx
     outgoing_key: orkut.com:000000000000
 
-¦container‚É‚ÍA"ORKUT","IGOOGLE","MYSPACE"‚Ì‚¢‚¸‚ê‚©‚ğw’è‚µ‚Ü‚·B
+â€»containerã«ã¯ã€"ORKUT","IGOOGLE","MYSPACE"ã®ã„ãšã‚Œã‹ã‚’æŒ‡å®šã—ã¾ã™ã€‚
 
-‚È‚¨Akeys‚Í•¡”İ’è‚Å‚«A1‚Â‚ÌƒKƒWƒFƒbƒgƒAƒvƒŠƒP[ƒVƒ‡ƒ“‚Å•¡”‚ÌOpenSocialƒT[ƒrƒX‚É‘Î‰‚³‚¹‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+ãªãŠã€keysã¯è¤‡æ•°è¨­å®šã§ãã€1ã¤ã®ã‚¬ã‚¸ã‚§ãƒƒãƒˆã‚¢ãƒ—ãƒªã‚±ãƒ¼ã‚·ãƒ§ãƒ³ã§è¤‡æ•°ã®OpenSocialã‚µãƒ¼ãƒ“ã‚¹ã«å¯¾å¿œã•ã›ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-views‚É‚ÍAƒI[ƒvƒ“ƒ\[ƒVƒƒƒ‹‚Ìd—l‚ÅŒˆ‚Ü‚Á‚Ä‚¢‚éhome,canvas,profile,preview‚Ì‚»‚ê‚¼‚ê‚Ìƒrƒ…[‚É‰½‚ğ•\¦‚·‚é‚©‚Æ˜g‚Ì‘å‚«‚³‚ğw’è‚µ‚Ü‚·B—á‚¦‚ÎˆÈ‰º‚Ì‚æ‚¤‚Éİ’è‚µ‚Ü‚·B
+viewsã«ã¯ã€ã‚ªãƒ¼ãƒ—ãƒ³ã‚½ãƒ¼ã‚·ãƒ£ãƒ«ã®ä»•æ§˜ã§æ±ºã¾ã£ã¦ã„ã‚‹home,canvas,profile,previewã®ãã‚Œãã‚Œã®ãƒ“ãƒ¥ãƒ¼ã«ä½•ã‚’è¡¨ç¤ºã™ã‚‹ã‹ã¨æ ã®å¤§ãã•ã‚’æŒ‡å®šã—ã¾ã™ã€‚ä¾‹ãˆã°ä»¥ä¸‹ã®ã‚ˆã†ã«è¨­å®šã—ã¾ã™ã€‚
 
 views:
   home:
@@ -76,7 +76,7 @@ views:
     height: 600px
 
 
-== ƒTƒ“ƒvƒ‹
+== ã‚µãƒ³ãƒ—ãƒ«
 
 script/generate controller Test
 
